@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<!--
+    Eventually by HTML5 UP
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>Feedbacker</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <!-- Waitlist Widget CSS -->
+        <link rel="stylesheet" type="text/css" href="https://prod-waitlist-widget.s3.us-east-2.amazonaws.com/getwaitlist.min.css"/>
+
+        <style>
+            /* Override the theme’s vertical centering of #header */
+            #header {
+                display: flex !important;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                transform: none !important;
+                -webkit-transform: none !important;
+                height: auto !important;
+                min-height: 100vh;
+                padding-top: 5rem; /* Add some space from the top */
+            }
+
+            #header .wrapper {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+                width: 100%;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 2rem; 
+                box-sizing: border-box;
+            }
+
+            #header .content {
+                flex: 1 1 auto;
+                max-width: 600px;
+                margin-right: 2rem;
+            }
+
+            #header .content h1 {
+                font-size: 2.5rem;
+                margin-bottom: 1rem;
+            }
+
+            #header .content p {
+                margin-bottom: 2rem;
+                line-height: 1.5;
+            }
+
+            #header .image-container {
+                flex: 0 0 auto;
+                max-width: 400px;
+                text-align: center;
+            }
+
+            #header .image-container img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            /* Mobile Styles */
+            @media (max-width: 768px) {
+                #header .wrapper {
+                    flex-direction: column;
+                    align-items: stretch;
+                    padding: 2rem 1rem;
+                }
+                #header .content {
+                    margin-right: 0;
+                    margin-bottom: 2rem;
+                }
+                #header .image-container {
+                    max-width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body class="is-preload">
+
+        <!-- Header Section -->
+        <header id="header">
+            <div class="wrapper">
+                <div class="content">
+                    <h1>Join us for our launch!</h1>
+                    <p>We're still working on Feedbacker, and we need more user input, so if you're interested to be interviewed, we would appreciate if you leave your contact below.</p>
+                    <!-- Waitlist Widget -->
+                    <div id="getWaitlistContainer" data-waitlist_id="23051" data-widget_type="WIDGET_2"></div>
+                </div>
+                <div class="image-container">
+                    <img src="images/demo.jpeg" alt="Startup Illustration" />
+                </div>
+            </div>
+        </header>
+
+        <!-- Scripts -->
+        <script src="assets/js/main.js"></script>
+        <!-- Waitlist Widget JS -->
+        <script src="https://prod-waitlist-widget.s3.us-east-2.amazonaws.com/getwaitlist.min.js"></script>
+    </body>
+</html>
